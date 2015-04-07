@@ -29,6 +29,7 @@
     </head>
     <body>
         <div class="app">
+		<div id="list" style="display:none;">
             <div class="header">
                 <div class="icon icon-list"></div> <div class="title">Video</div>
             </div>
@@ -114,10 +115,35 @@
                         </div>
                     </a>
                 </div>
-
             </div>
+			</div>
+			<div class="detail" id="detail">
+				  <div class="header">
+					<div class="icon icon-back" onclick="back()"></div> <div class="title">CHI TIẾT FILM</div>
+				</div>
+				<div class="video">
+				<video id="video1" width="100%" controls="">
+				<source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+				<source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+				Your browser does not support HTML5 video.
+			  </video>
+				</div>
+				<div class="tab">
+					<div class="item">
+						<div class="ct" style=" border-right: 1px solid #989898;">Liên Quan</div>
+					</div>					
+					<div class="item">
+						<div class="ct">Thông Tin</div>
+					</div>
+				    <div class="desc">
+					Tận Diệt - Wyrmwood: Road Of The Dead: Barry là một thợ máy lành nghề và đảm đương việc gia đình, cuộc sống của gia đình anh bị xáo trộn khi đại dịch thây ma bùng phát. Em gái anh bị bắt bởi một đám người đeo mặt nạ và trang bị vũ khí hung tợn, điều hành bởi một tay bác sĩ quái dị. Trong lúc cô em gái lập kế hoạch bỏ trốn thì Barry cũng lên đường để cứu em mình. Dọc đường, anh gặp một người đàn ông sống sót lưu vong. Cả hai phải tự vũ trang và đồng hành cùng nhau băng qua con đường đầy thây ma, đến vùng rừng núi hoang vu hẻo lánh…
+					</div>
+				
+				</div>
+			</div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
+		  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>

@@ -49,3 +49,12 @@ var app = {
 };
 
 app.initialize();
+
+function back(){
+$("#detail").hide();
+$("#list").show();
+
+}
+
+
+
