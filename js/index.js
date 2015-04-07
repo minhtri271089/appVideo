@@ -49,8 +49,8 @@ var app = {
 };
 
 app.initialize();
-$("#detail").hide();
-$("#list").show();
+$("#detail").show();
+$("#list").hide();
 function back(){
 $("#detail").hide();
 $("#list").show();
