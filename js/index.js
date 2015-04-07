@@ -49,12 +49,27 @@ var app = {
 };
 
 app.initialize();
-
+$("#detail").hide();
+$("#list").show();
 function back(){
 $("#detail").hide();
 $("#list").show();
 
 }
+$("#list").find(".item").each(function(i,tag){
 
-
+	$(tag).click(function(){
+	$("#detail .header .title").html($(tag).find(".title").text());
+	$("#detail  .desc").html($(tag).find(".desc").text());
+	//console.log($this.attr("url"));
+	$(".video").html('<video autoplay id="video1" width="100%" controls=""><source src="'+$(tag).attr("url")+'" type="video/mp4">Your browser does not support HTML5 video.</video>') //("source").attr("src",$this.attr("url"))
+	
+	//console.log($this.find(".title").text());
+		//alert("ss");
+		$("#list").hide();
+	$("#detail").show();
+	})
+	
+	
+})
 
